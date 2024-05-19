@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+h1,
+h3 {
+  font-family: Pacifico;
+}
+.headline i {
+  color: #bbe4e9;
+}
+
+input:focus {
+  outline: 3px solid #bbe4e9 !important; /* Change color when the input is focused */
+}
+.is-invalid {
+  outline: 3px solid #dc3545;
+}
+.is-invalid:focus {
+  outline: 3px solid #dc3545 !important;
+}
+.is-valid {
+  outline: 3px solid #198754;
+}
+.is-valid:focus {
+  outline: 3px solid #198754 !important;
+}
+body {
+  background-color: #005792;
+}
+.btn-info {
+  background-color: #bbe4e9;
+  border: 3px solid #5585b5;
+  color: #00204a;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.btn-info:hover {
+  background-color: #5585b5;
+  color: #bbe4e9;
+}
+.container .row h1::after {
+  content: "";
+  height: 25%;
+  width: 100%;
+  background-color: #bbe4e9;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.container .row h1:hover::after {
+  height: 45%;
+}
+.container .row h1 {
+  isolation: isolate;
+  width: fit-content;
+  margin: auto;
+  font-size: 3rem;
+}
+hr {
+  border: none;
+  height: 3px; /* Adjust as needed */
+  background-image: linear-gradient(
+    to right,
+    #eaf6f6 33%,
+    rgba(234, 246, 246, 0) 0%
+  );
+  background-position: top;
+  background-size: 5px 3px; /* Adjust spacing of the dots */
+  background-repeat: repeat-x;
+}
+.box-info {
+  background-color: #0007;
+}
+
+.box-content {
+  position: absolute;
+  top: 150px;
+}
